@@ -7,3 +7,5 @@
   from = "/*"
   to = "/index.html"
   status = 200
+
+# Netlify build configuration for the nested appointment-letter-generator app.
