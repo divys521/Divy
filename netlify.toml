@@ -9,3 +9,5 @@
   status = 200
 
 # Netlify build configuration for the nested appointment-letter-generator app.
+
+# PDF generation fix deployed from main.
