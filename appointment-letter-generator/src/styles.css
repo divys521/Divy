@@ -122,3 +122,21 @@ td em{background:#e8f8ee;color:#187044}
 .annex th:first-child,.annex td:first-child{width:62%}
 .annex th:nth-child(2),.annex td:nth-child(2),.annex th:nth-child(3),.annex td:nth-child(3){width:19%;white-space:normal}
 .annex .sign{margin-top:27px}
+
+
+/* Final PDF layout corrections based on the generated 3-page sample. */
+.print-document .pdf-page{width:794px;min-width:794px;max-width:794px;overflow:hidden}
+.pdf-page .lh{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start;column-gap:28px}
+.pdf-page .lh span:first-child{overflow-wrap:anywhere}
+.pdf-page .lh span:last-child{text-align:right;white-space:nowrap}
+.pdf-page .annex-top{display:grid;grid-template-columns:minmax(0,1fr) auto auto;column-gap:18px;align-items:start}
+.pdf-page .annex table{width:100%!important;min-width:0!important;max-width:100%;table-layout:fixed;border-collapse:collapse}
+.pdf-page .annex table th:first-child,.pdf-page .annex table td:first-child{width:58%;white-space:normal;overflow-wrap:anywhere}
+.pdf-page .annex table th:nth-child(2),.pdf-page .annex table td:nth-child(2),
+.pdf-page .annex table th:nth-child(3),.pdf-page .annex table td:nth-child(3){width:21%;white-space:normal;text-align:right;overflow-wrap:anywhere}
+.pdf-page .annex table th,.pdf-page .annex table td{padding:5px 6px;font-size:10px;line-height:1.2}
+.pdf-page .annex table td:first-child{word-break:normal}
+.pdf-page .sign{display:block;width:100%;max-width:100%;overflow-wrap:anywhere}
+.pdf-page .accept{max-width:100%;overflow-wrap:anywhere}
+.pdf-page .page-number{display:block;max-width:calc(100% - 160px);overflow-wrap:anywhere}
+@media print{.pdf-page .annex table{min-width:0!important;width:100%!important}}
