@@ -140,3 +140,19 @@ td em{background:#e8f8ee;color:#187044}
 .pdf-page .accept{max-width:100%;overflow-wrap:anywhere}
 .pdf-page .page-number{display:block;max-width:calc(100% - 160px);overflow-wrap:anywhere}
 @media print{.pdf-page .annex table{min-width:0!important;width:100%!important}}
+
+
+/* Match the denser original Word layout: improve text scale and remove excessive empty vertical space. */
+.pdf-page{font-size:12.25px;line-height:1.4}
+.letter .lh{font-size:11.5px;margin-bottom:24px;line-height:1.3}
+.letter p{font-size:12.25px;line-height:1.4;margin:9px 0}
+.clause{font-size:12.25px;line-height:1.4;margin:10px 0 11px}
+.clause p{font-size:12.25px;line-height:1.4;margin:4px 0 0}
+.accept{font-size:10.5px;line-height:1.4;margin:17px 0 0}
+.accept p{font-size:10.5px;line-height:1.4;margin:7px 0 11px}
+.page-two .clause{margin:0 0 13px}
+.annex{font-size:11.5px}
+.annex-top{font-size:11.5px;margin-bottom:27px}
+.annex h2{margin:24px 0 18px}
+.pdf-page .annex table th,.pdf-page .annex table td{font-size:10.5px;line-height:1.25;padding:6px}
+.pdf-page .sign{margin-top:24px}
