@@ -100,3 +100,25 @@ td em{background:#e8f8ee;color:#187044}
 @media(max-width:850px){aside{width:72px;padding:14px 8px}.brand b{display:none}.brand{justify-content:center;padding:8px 0 18px}.brand .logo{width:38px;height:38px}nav{padding-top:18px}nav button,nav button.on{justify-content:center;gap:0;padding:12px 8px;font-size:0}nav button svg{width:19px;height:19px}main{margin-left:72px}header{height:76px;padding:0 18px}header h2{font-size:20px}.content{padding:20px 16px 34px}.hero{align-items:flex-start;flex-direction:column;padding:23px}.hero h3{font-size:21px}.hero button{width:100%;justify-content:center}.stats{grid-template-columns:1fr;gap:10px;margin:16px 0}.stats>div{min-height:unset;padding:16px 18px}.stats b{font-size:25px;margin-top:6px}.section .fields{padding:19px;grid-template-columns:1fr;gap:17px}.section label:has(textarea){grid-column:auto}.actions{align-items:stretch;flex-direction:column}.actions button{justify-content:center}.previewbar{align-items:flex-start;flex-direction:column}.previewbar>div:last-child{width:100%}.previewbar>div:last-child button{flex:1;justify-content:center}.paper{padding:14px}.success{margin:28px auto;padding:30px 20px}.success>div{flex-wrap:wrap}.login-card{width:min(410px,calc(100vw - 32px));padding:30px 24px}}
 @media(max-width:480px){header{padding:0 12px}header h2{font-size:18px}.header-right{gap:6px}.header-auth{padding:8px}.header-right span{display:none}.content{padding:16px 12px 28px}.hero{border-radius:12px;padding:20px}.section .panelhead{padding:16px 18px}.section .fields{padding:17px}.previewbar>div:last-child{flex-direction:column}.paper{padding:8px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+
+
+/* Appointment PDF spacing refinement: keep the fixed three-page A4 template and improve readability. */
+.print-document{gap:0}
+.pdf-page{font-family:"Times New Roman",serif;font-size:11.25px;line-height:1.32;padding-left:78px;padding-right:78px}
+.letter .lh{margin-bottom:22px;line-height:1.25}
+.letter p{margin:7px 0;line-height:1.32}
+.clause{margin:8px 0 9px;line-height:1.32;break-inside:avoid}
+.clause p{margin:3px 0 0;line-height:1.32}
+.accept{font-size:10px;line-height:1.35;margin:14px 0 0;overflow-wrap:break-word}
+.accept p{font-size:10px;line-height:1.35;margin:5px 0 10px}
+.sign{margin-top:20px;line-height:1.35}
+.page-two{padding-top:140px}
+.page-two .clause{margin:0 0 11px}
+.annex{padding-top:108px}
+.annex-top{margin-bottom:24px;line-height:1.25}
+.annex h2{margin:22px 0 16px;line-height:1.2}
+.annex table{font-size:10.5px;line-height:1.22;margin-top:12px;table-layout:fixed}
+.annex th,.annex td{padding:5px 6px;line-height:1.22;overflow-wrap:break-word}
+.annex th:first-child,.annex td:first-child{width:62%}
+.annex th:nth-child(2),.annex td:nth-child(2),.annex th:nth-child(3),.annex td:nth-child(3){width:19%;white-space:normal}
+.annex .sign{margin-top:27px}
